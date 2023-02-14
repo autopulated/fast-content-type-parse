@@ -86,7 +86,7 @@ function parse (header) {
 
     index += match[0].length
     key = match[1].toLowerCase()
-    value = match[2]
+    value = match[2].toLowerCase()
 
     if (value[0] === '"') {
       // remove quotes and escapes
@@ -143,7 +143,7 @@ function safeParse (header) {
 
     index += match[0].length
     key = match[1].toLowerCase()
-    value = match[2]
+    value = match[2].toLowerCase()
 
     if (value[0] === '"') {
       // remove quotes and escapes
